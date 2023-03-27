@@ -1,0 +1,154 @@
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../images/star-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-bar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgb(183, 18, 129);
+    padding: 0 1rem;
+    box-shadow: 0 0 10px black;
+    z-index: 5;
+}
+
+.nav-bar .nav-title{
+    font-size: 3.25rem;
+    margin-right: auto;
+    font-family: 'Bangers', cursive;
+}
+
+.nav-bar .nav-links a{
+    margin: 0 1rem;
+    font-size: x-large;
+    font-weight: bold;
+    color: #ddd;
+}
+
+.dialog-box{
+    visibility: hidden;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: green;
+    width: max-content;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 1rem 6rem;
+}
+
+.search-area .search-box{
+    position: relative;
+    display: block;
+    margin-top: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(0, 128, 255);
+    padding: 0.7rem;
+    font-size: 0.875rem;
+    width: 30vw;
+    border: 2px solid gold;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgb(132, 132, 26);
+    z-index: 1;
+}
+
+.search-area .search-box:focus{
+    border: 2px solid gold;
+    outline: rgb(0, 128, 255) solid 3px;
+}
+
+.search-area .search-box::placeholder{
+    color: #ccc;
+}
+
+.tv-shows{
+    height: 25rem;
+    margin-top: -0.4rem;
+    overflow-y: scroll;
+}
+
+.tv-shows::-webkit-scrollbar{
+    display: none;
+}
+
+.show-box{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vw;
+    background-color: #2227;
+    padding: 0.7rem;
+    box-shadow: 0 0 5px #000;
+    border-bottom: 1px solid white;
+}
+
+.show-details{
+    font-size: 1.15rem;
+    margin-left: 1rem;
+}
+
+.show-details .show-name{
+    margin-top: 0.4rem;
+}
+
+.button{
+    margin: 0.7rem 0;
+    font-size: 1rem;
+    display: block;
+    width: 24vw;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.button:hover{
+    color: black;
+    background-color: white;
+}
+
+.detail-btn:focus{
+    animation: bump-down 0.5s ease-in-out;
+}
+
+@keyframes bump-down {
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(3px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+}
+
+.fav-btn{
+    background-color: green;
+}
+
+.orange-bg{
+    background-color: orange;
+}
+
+.display-block{
+    visibility: visible;
+}

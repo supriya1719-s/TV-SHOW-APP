@@ -1,0 +1,74 @@
+body{
+    overflow-y: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.container .upperdiv{
+    width: 60%;
+    height: 20rem;
+    background-color: rgb(216, 18, 51);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    animation: slide-down 1.15s 1 cubic-bezier(0.25, 0.65, 0.95, 1);
+    z-index: 1;
+}
+
+@keyframes slide-down {
+    0%{
+        margin-top: -17rem;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+
+.container img {
+    position: absolute;
+    display: block;
+    height: 25rem;
+    width: 20rem;
+    border-radius: 50%;
+    border: 7px solid #111;
+    background-color: white;
+    margin-top: 5rem;
+    z-index: 1;
+}
+
+.container .name{
+    text-align: center;
+    margin-top: 27rem;
+    font-size: xx-large;
+    font-family: 'Bangers', cursive;
+}
+
+.container .lowerdiv{
+    position: absolute;
+    height: 35rem;
+    width: 60%;
+    margin-top: 5rem;
+    background-color: #111;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 0;
+}
+
+.container .lowerdiv .heart-icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: deeppink;
+    transition: 0.2s all;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.container .lowerdiv .heart-icon:hover{
+    scale: 1.5;
+}

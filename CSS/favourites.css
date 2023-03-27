@@ -1,0 +1,63 @@
+.container{
+    margin: 0 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 2rem;
+    height: max-content;
+    width: 14.8rem;
+    background-color: #111;
+    border-radius: 10px;
+    font-size: x-large;
+    box-shadow: 0 5px 10px #0008;
+    animation: fade-in 1s ease-in;
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.card > *{
+    margin-bottom: 1rem;
+}
+
+.card .card-img{
+    height: 12rem;
+    width: 14rem;
+    border: 6px solid rgb(207, 20, 54);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card .name{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Bangers', cursive;
+}
+
+.card .heart-icon{
+    text-align: center;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.card .heart-icon:hover{
+    scale: 1.5;
+}
+
+.button{
+    margin-top: 1.5rem;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
